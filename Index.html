@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>palindrome birthday</title>
+  </head>
+  <body>
+    <div class="container">
+    <section id="calcPalin">
+      <h2>
+        Enter your DOB and we'll let you know whether your birthday is
+        palindrome.
+      </h2>
+      <p>
+        To increase your chances of winning this app checks your DOB in 3
+        formats yyyy-mm-dd, dd-mm-yyyy, mm-dd-yy
+      </p>
+      <form id="palinForm">
+        <input type="date" required class="bDate" />
+        <input type="submit" class="submitBtn" value="Check" />
+        <input type="submit" class="resetBtn" value="Reset" />
+      </form>
+      <img
+        class="loader"
+        src="gifs/loading-gif.gif"
+        alt="loader"
+        height="160px"
+      />
+      <img
+        src="/gifs/giphy.gif"
+        alt="celebration"
+        class="happy"
+        height="200px"
+      />
+      <img src="/gifs/sad.gif" alt="celebration" class="sad" height="200px" />
+      <h3 id="resultTxt"></h3>
+    </div>
+    </section>
+    <footer>
+      <div>Made by Manisha Gajula</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
